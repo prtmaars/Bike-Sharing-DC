@@ -117,7 +117,7 @@ def multi_line_chart_2col(df, cols, titles, chart_type, bar_size=15):
 def create_kpi_row1(df):
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric("Total Bike Rentals", f"{df['cnt'].sum():,}")
+        st.metric("Total Bike Rentals", f"{df['cnt'].sum():,.0f}")
     with col2:
         avg_monthly = df.groupby(pd.Grouper(key='dteday', freq='M'))['cnt'].sum().mean()
         st.metric("Avg Monthly Rentals", f"{avg_monthly:,.0f}")
@@ -144,11 +144,11 @@ def create_kpi_row4(df):
     col1, col2, col3 = st.columns(3)
     with col1:
         total_users = df['casual'].sum() + df['registered'].sum()
-        st.metric("Total Users", f"{total_users:,}")
+        st.metric("Total Users", f"{total_users:,.0f}")
     with col2:
-        st.metric("Total Casual Users", f"{df['casual'].sum():,}")
+        st.metric("Total Casual Users", f"{df['casual'].sum():,.0f}")
     with col3:
-        st.metric("Total Registered Users", f"{df['registered'].sum():,}")
+        st.metric("Total Registered Users", f"{df['registered'].sum():,.0f}")
 
 def demand_category_pie(df):
     """Create pie chart of demand categories"""
