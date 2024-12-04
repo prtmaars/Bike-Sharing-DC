@@ -6,6 +6,7 @@ import altair as alt
 @st.cache_data
 def load_data(file_path):
     df = pd.read_csv(file_path)
+    file_path = "https://github.com/prtmaars/Bike-Sharing-DC/blob/ddfdbf67d055713bb0991f137ad1fcbd14c697ed/dashboard/data_hrfix.csv"
     df['dteday'] = pd.to_datetime(df['dteday'])
     return df
 
@@ -184,7 +185,7 @@ def main():
     st.title("Bike Sharing Dashboard")
     
     # Load Data
-    df = load_data("https://github.com/prtmaars/Bike-Sharing-DC/blob/ddfdbf67d055713bb0991f137ad1fcbd14c697ed/dashboard/data_hrfix.csv")
+    df = load_data()
     
     # Apply Filters
     filtered_df = apply_filters(df)
