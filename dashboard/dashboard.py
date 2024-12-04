@@ -184,7 +184,7 @@ def main():
     st.title("Bike Sharing Dashboard")
     
     # Load Data
-    df = load_data(https://raw.githubusercontent.com/prtmaars/Bike-Sharing-DC/ddfdbf67d055713bb0991f137ad1fcbd14c697ed/dashboard/data_hrfix.csv)
+    df = load_data("https://raw.githubusercontent.com/prtmaars/Bike-Sharing-DC/ddfdbf67d055713bb0991f137ad1fcbd14c697ed/dashboard/data_hrfix.csv")
     
     # Apply Filters
     filtered_df = apply_filters(df)
