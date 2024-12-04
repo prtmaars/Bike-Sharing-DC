@@ -1,5 +1,5 @@
 # Washington DC Bike Sharing Rent Analysis 
-Dicoding Data Analysis Project ✨
+Dicoding Data Analysis Project ✨ [Explore the Dashboard](https://bike-sharing-dc-view.streamlit.app/)
 
 ## Project Overview
 Project ini adalah project analisis data dari Dicoding yang bertujuan untuk memahami pola sewa sepeda pada sistem bike sharing di Washington D.C., USA. Bike sharing adalah sistem penyewaan sepeda otomatis di mana pengguna dapat menyewa sepeda di satu lokasi dan mengembalikannya di lokasi yang berbeda. Sistem ini semakin populer karena berperan penting dalam mengatasi masalah kemacetan, lingkungan, dan kesehatan. Data yang digunakan dalam proyek ini mencakup informasi tentang jumlah sepeda yang disewa berdasarkan cuaca, musim, temperatur, dan waktu sewa, yang memungkinkan kita untuk menganalisis faktor-faktor yang mempengaruhi permintaan sepeda.
